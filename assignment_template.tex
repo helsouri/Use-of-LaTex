@@ -1,0 +1,79 @@
+\documentclass[letterpaper, 24pt, final, onecolumn, titlepage] {article}
+
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+
+\title{ECE 270: Computer Methods in ECE \\
+	\vspace{1.5cm}
+   		\begin{center}\includegraphics{umlogo} \end{center}
+	\vspace{1.5cm}
+	\textbf{Assignment \#5} \\
+	Average and Standard Deviation}
+	
+\author{Mary Jane}
+
+\date{\today}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\maketitle
+
+\doublespacing
+
+\section{Statement of the Problem}
+
+In this section, state \textbf{in your own words} what is the problem to be solved here. Focus on just the problem at hand and not the solution!
+
+\section{Description of Solution}
+
+In this section, explain how you solved the problem. Focus on the underlying marthematics and logic, rather than giving a line by line explanation of code. You can use brief code fragments in this section, but not large chunks of code. 
+
+Break your writing into logical paragraphs! Do not write just one very long paragraph. Make your explanation have a logical flow; for example this needs to be explained before this, etc.
+
+\section{Testing and Output}
+
+In this section, explain what test you set up to verify that your program works; for example, what parameters were used. Give the output that the program produced along with some commentary. Is the output what you expected? How could it be improved?
+
+\pagebreak
+
+\section{Code}
+\singlespacing
+
+\begin{lstlisting}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello world!\n");
+    return 0;
+}
+
+\end{lstlisting}
+
+\end{document}
