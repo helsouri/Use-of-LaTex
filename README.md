@@ -4,6 +4,7 @@ This is to display ability to use Latex <br>
 Link here: https://www.latex-project.org/
 
 Attached is a pdf file to simply display my ability in the use of Latex along with the tex file </br>
-**Use of latex was completely optional**
+Files made available are two assignments as a pdf and a tex file <br>
 
-As well as a template zip file(please use this for proper functionality of tex file as it needs the images)
+As well as a template zip file(please use this for proper functionality of tex file as it needs the images) <br>
+**Use of latex was completely optional**
