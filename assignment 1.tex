@@ -1,0 +1,124 @@
+\documentclass[letterpaper, 24pt, final, onecolumn, titlepage] {article}
+
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage {amsmath}
+\usepackage{amssymb}
+
+\title{ECE 270: Computer Methods in ECE \\
+	\vspace{1.5cm}
+   		\begin{center}\includegraphics{umlogo} \end{center}
+	\vspace{1.5cm}
+	\textbf{Assignment \#1} \\
+	Math Review}
+	
+\author{Hussein El-Souri}
+
+\date{\today}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\maketitle
+
+\doublespacing
+
+\section{Statement of the Problem}
+The purpose of this assignment is to review mathmatical concepts and use \LaTeX\ to be able to produce those concepts into a technical report.\\
+
+\pagebreak
+
+\section{Description of Solution}
+1.a) Suppose we have a straight line with points $(x_1, y_1) and (x_2, y_2)$.
+In order to find the equation of the line first we should find the slope m such that $m=\frac{y_2-y_1}{x_2-x_1}$ and plug it into the equation:
+\begin{equation} \label{line} 
+	y - y_1 =  m(x - x_1)
+\end{equation}
+1.b) We should first rewrite the equation \ref{line} in slope intercept form as such:
+\begin{equation} \label{line_intercept}
+	y = mx + b
+\end{equation}
+And here we can replace the values of $y$ and $x$ with any desired value say $y^*$ and $x^*$ to get:
+\begin{equation}\label{line_final}
+y^* = mx^* + b
+\end{equation}
+2.The distance formula is the square root of the difference between the squares of the coordinates composing each point as such:
+\begin{equation}\label{distance}
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+\end{equation}
+\\\\3.a)We used desmos graphing calculator to draw any two random circles and label their centers and radii resulting in:
+\begin{center}\includegraphics{circles} \end{center}
+3.b) We can use the distance using the formula: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$.\\
+3.c)Two circles intersect if the distance between their centers is less than the sum of the radii as such: $d < (r_1 + r_2)$.\\\\
+4.a) The general solution for a quadratic equation of the from$ax^2 + bx + c = 0$ is: $x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$.\\
+\pagebreak
+4.b) The discriminant d  is expressed as : $d = \sqrt{b^2-4ac}$.\\
+4.c) The discriminant can be broken down into three possible solutions:
+\begin{enumerate}
+\item[i.] if $d>0$ we have two unique real solutions $x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$.
+\item[ii.] if $d=0$ we have one repeated solution $x_1 = x_2 = \frac{-b}{2a}$.
+\item[iii.] if $d<0$ we have two unique complex solutions $x_{1,2} = \frac{-b \pm i\sqrt{|b^2-4ac|}}{2a}$.\\
+\end{enumerate}
+5.a)First, we must understand how polar coordinates are represented. If we assume that each of those small circles are a point and connect the origin of the coordinate system to that point we form a radius and at angle $\theta$
+Then take a perpendicular line from that point to the x-axis forming a right-angle triangle. Here we can use trigonometric identities to find that $x = r\cos\theta$ and $y = r\sin\theta$ as the image demonstrates:
+\begin{center}\includegraphics{PolarCoordinateSystem} \end{center}
+\pagebreak
+Secondly, if we take look at the following picture:
+\begin{center}\includegraphics{PolarCircles} \end{center}
+We can see (still assuming each small circle is a point) that they small circles form a bigger circle with center at the origin.
+A circle with radius $r$ and center$(h, k)$ as an equation of the general form:
+\begin{equation}\label{circle}
+(x-h)^2 + (y-k)^2 = r^2
+\end{equation}
+But in this case since the larger circle is centered at the origin $h = k = 0$ so the equation becomes:
+\begin{equation} \label{circleOrigin}
+x^2 + y^2 = r^2
+\end{equation}
+5.b) However; if the circle is not centered at the origin and is centered at $(cx, cy)$ then the values of $(h,k)$ in equation \ref{circle} will be replaced with the values of $(cx, cy)$ to get $(x-cx)^2 + (y-cy)^2 = r^2$.\\\\
+6.a) The magnitude of a complex number $|z|$ is equal to the square root of the sum of the squares of its real part and imaginary part as such: $|z| = \sqrt{a^2 + b^2}$.\\
+6.b)The Complex conjugate $z^*$ can be computed simply by inverting the sign of the imaginary part of the conjugate as such:$z^* = a - ib$.\\
+6.c) The polar form of a complex number is as such $z= r( \cos\theta + i\sin\theta)$. \\
+6.d) The sum $z$ of two complex numbers $z_1$ and $z_2$ is obtained by \\respectively adding the real parts and the imaginary parts of each as such: $z= (a_1 +a_2) + i(b_1 +b_2)$.
+6.e) The product of two complex numbers is done through the distribution rule as such:
+\begin{align*}
+z &= z_1z_2\\
+&= (a_1 +ib_1)(a_2 + ib_2)\\
+&= a_1a_2 + ia_1b_2 + ib_1a_2 + i^2b_1b_2\\
+&= a_1a_2 + ia_1b_2 + ib_1a_2 - b_1b_2\\
+& \therefore\\
+z &= ( a_1a_2 - b_1b_2) + i(a_1b_2 + b_1a_2)\\
+\end{align*}
+
+\pagebreak
+
+\section{Testing and Output}
+Displaying the pdf document correctly with no errors best ensures the success of the report written in \LaTeX.\\
+The output is as expected but can be improved by possibly solving the assigned prooblems in functions that are already built into \LaTeX.\\
+For example functions dedicated to representing complex numbers or polar coordinates. If these functions exist it would have decreased the number of lines/characters used to write this report.
+
+\pagebreak
+
+\end{document}
