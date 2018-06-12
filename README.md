@@ -6,4 +6,4 @@ Link here: https://www.latex-project.org/
 Attached is a pdf file to simply display my ability in the use of Latex along with the tex file </br>
 **Use of latex was completely optional**
 
-As well as the entire zip file(please use this for proper functionality of tex file as it needs the images)
+As well as a template zip file(please use this for proper functionality of tex file as it needs the images)
